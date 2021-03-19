@@ -1,10 +1,3 @@
-development:
-  url: <%= ENV['DATABASE_URL'] %>
-  # mysql2://codeboxx:Codeboxx1!@codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com:3306/csl
-  
-dwh_production:
-  url: <%= ENV['DWH_URL'] %>
-  # postgres://codeboxx:Codeboxx1!@codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com:5432/MaximeAuger_psql
 # development:
 #   database: MaximeAuger_mysql
 #   adapter: mysql2
@@ -27,3 +20,13 @@ dwh_production:
 #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 #   username: postgres
 #   password: postgres
+
+
+
+  development:
+  url: <%= ENV['DATABASE_URL'] %>
+  # mysql2://codeboxx:Codeboxx1!@codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com:3306/csl
+  
+dwh_production:
+  url: <%= ENV['DWH_URL'] %>
+  # postgres://codeboxx:Codeboxx1!@codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com:5432/MaximeAuger_psql
