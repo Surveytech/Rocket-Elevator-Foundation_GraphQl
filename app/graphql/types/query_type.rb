@@ -47,17 +47,17 @@ module Types
       Employee.all
     end
     
-    field :all_interventions, [FactInterventionType], null: false
-    def all_interventions
+    field :intervention, [FactInterventionType], null: false
+    def intervention
       FactIntervention.all
     end
     
 
-    field :all_interventions, Types::FactInterventionType, null: false do
+    field :intervention, Types::FactInterventionType, null: false do
       argument :id, ID, required: true
     end
 
-    def all_interventions(id:)
+    def intervention(id:)
       FactIntervention.find(id)
     end
 
