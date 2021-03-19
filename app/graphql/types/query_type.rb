@@ -47,10 +47,10 @@ module Types
       Employee.all
     end
     
-    field :intervention, [FactInterventionType], null: false
-    def intervention
-      FactIntervention.all
-    end
+    # field :intervention, [FactInterventionType], null: false
+    # def intervention
+    #   FactIntervention.all
+    # end
     
 
     field :intervention, Types::FactInterventionType, null: false do
