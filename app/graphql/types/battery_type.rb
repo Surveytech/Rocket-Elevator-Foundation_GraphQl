@@ -14,11 +14,8 @@ module Types
     field :id, ID, null: false
 
 
-    # to make queries with a type
-    # Adds the queryable  field of building in the battery type class
     field :building, Types::BuildingType, null: true
 
-    # Defines the  building attribute where the battery_id is equal to the building id
     def Building
       Building.where(id: object.building_id)[0]
     end
