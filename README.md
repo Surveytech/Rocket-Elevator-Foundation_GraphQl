@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # Rocket-Elevators_GraphQL-Api
+# howtodeployheroku
