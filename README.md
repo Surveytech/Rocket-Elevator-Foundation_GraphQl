@@ -1,26 +1,44 @@
-# README
+all queries can be accessible througth postman or heroku at this end point
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://dashboard.heroku.com/apps/graphql-ruby
 
-Things you may want to cover:
+first query:
 
-* Ruby version
+query{ intervention(id:3){ 
+  startInterv 
+  stopInterv address{ 
+    addressInformation} } }
+    
+    (addressInformation is a custom field created that goes and gets the rest of the required info all in one function )
 
-* System dependencies
+second query:
+query {customer{
+  id
+	companyName
+  cpyContactEmail
+  cpyContactPhone
+  techManagerServiceEmail
+  techAuthorityServicePhone
+  techAuthorityServiceFullName
+  addressId
+  }
+}
+ 	third query: 
 
-* Configuration
+  {employee(id:4){
+id
+lastname
+firstname
+intervention{
+id{
+building{
+id{
+buildingDetail{
+id
+infokey
+value
+create_at
+updated_at}}}}}
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Rocket-Elevators_GraphQL-Api
-# howtodeployheroku
+all possible queries:
+coming soon , i didnt have them ready last friday but did want to include them
