@@ -50,3 +50,5 @@ updated_at}}}}}
 
 ## all possible queries:
 ## coming soon , i didnt have them ready last friday but did want to include them
+
+Claude St-Laurent
